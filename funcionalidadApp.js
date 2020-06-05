@@ -22,3 +22,9 @@ function almacenaDatos(user){
     firebase.database().ref("datosInicioDeSesion/"+user.uid)
     .push(datosDelUsuario)
 }
+// reading from the database in real time
+firebase.database().ref("datosInicioDeSesion")
+.on("child_added", function(s){
+    var usuario2=s.val();
+    $('#principal').append("<img width='150px'src='"+user.foto+"'/>");
+})
