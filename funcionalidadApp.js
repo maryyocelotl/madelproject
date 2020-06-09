@@ -15,14 +15,15 @@ $('#logueo').click(function(){
 function almacenaDatos(user){
     var datosDelUsuario={
         nombre: user.displayName,
-        emaail: user.emaail,
+        email: user.email,
         foto: user.photoURL,
         uid: user.uid
     }
     firebase.database().ref("datosInicioDeSesion/"+user.uid)
     .push(datosDelUsuario)
 }
-// reading from the database in real time
+
+//leyendo de la base de datos en tiempo real
 firebase.database().ref("datosInicioDeSesion")
 .on("child_added", function(s){
     var usuario2=s.val();
