@@ -1,20 +1,4 @@
 # madelproject
 
-MCVE error: Uncaught TypeError: Cannot read property 'GoogleAuthProvider'
-
-
-
-I was trying to follow a tutorial from a course
-
-but when I click on the button **logueo** I get the error: Uncaught TypeError: Cannot read property 'GoogleAuthProvider'** of undefined      at functionalityApp.js: 1
-
-Firebase only provides me with those snippets
-
-
-
-
-SDK version you are using: 7.14.3
-
-Language: Javascript, HTML
-
-Platform and/or Development Environment: Visual Studio Code and Web Server for Chrome
+In the project there were 2 folders, one called .firebase where the file hosting.cHVibGlj.cache was located and another
+folder called public where the files 404.html and index.html were, but not to put the folders , leave them with others.
